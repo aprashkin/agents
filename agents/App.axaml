@@ -1,0 +1,24 @@
+<Application xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             x:Class="agents.App"
+             xmlns:local="using:agents"
+             RequestedThemeVariant="Default">
+             <!-- "Default" ThemeVariant follows system theme variant. "Dark" or "Light" are other available options. -->
+
+    <Application.DataTemplates>
+        <local:ViewLocator/>
+    </Application.DataTemplates>
+             
+    <Application.Styles>
+        <FluentTheme />
+        <Style Selector="TextBlock">
+            <Setter Property="FontFamily" Value="avares://agents/Assets/Fonts/centurygothic.ttf#FontFamilyName"/>
+        </Style>
+        <Style Selector="Button">
+            <Setter Property="FontFamily" Value="avares://agents/Assets/Fonts/centurygothic.ttf#FontFamilyName"/>
+        </Style>
+        <Style Selector="TextBox">
+            <Setter Property="FontFamily" Value="avares://agents/Assets/Fonts/centurygothic.ttf#FontFamilyName"/>
+        </Style>
+    </Application.Styles>
+</Application>
